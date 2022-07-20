@@ -7,7 +7,7 @@ document.getElementById("save-btn").onclick = async () => {
         function: () => getSelection().toString(),
       });
     } catch (e) {
-      return; // ignoring an unsupported page like chrome://extensions
+      return;
     }
     console.log('Selection: ' + result);
   };
